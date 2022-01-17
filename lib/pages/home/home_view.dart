@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("This is home screen nigga"),
+              Text("I am the  nigga"),
               TextButton(
                   onPressed: () => Get.toNamed('/details'),
                   child: Text("Go to Add Page")),
