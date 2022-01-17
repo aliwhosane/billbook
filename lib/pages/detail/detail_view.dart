@@ -28,16 +28,11 @@ class DetailScreen extends StatelessWidget {
                     child: Text(
                       "Add Product",
                     )),
-                // Obx(() => TextButton(
-                //     onPressed: () {
-                //       cartController.clearCart();
-                //     },
-                //     child: Text("Clear Cart")))
-                // TextButton(
-                //     onPressed: () {
-                //       // cartController.clearCart();
-                //     },
-                //     child: Text("Clear Cart"))
+                TextButton(
+                    onPressed: () {
+                      cartController.clearCart();
+                    },
+                    child: Text("Clear Cart"))
               ],
             )
           ],
