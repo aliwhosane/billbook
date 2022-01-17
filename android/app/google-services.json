@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "402837791555",
+    "project_id": "billbook-aliwhosane",
+    "storage_bucket": "billbook-aliwhosane.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402837791555:android:9ad2bc3c96f322261005f6",
+        "android_client_info": {
+          "package_name": "com.billbook.billbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402837791555-cnagjrar7p3d7i9dd2mlr10ur6ss1kaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqjwV9lXsqR5L-HKyIFFG1vvvlKjHwdsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402837791555-cnagjrar7p3d7i9dd2mlr10ur6ss1kaq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
