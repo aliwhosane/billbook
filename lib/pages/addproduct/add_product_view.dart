@@ -52,7 +52,7 @@ class AddProductScreen extends StatelessWidget {
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10)),
                           label: Text('Product Price')),
-                      controller: addProductController.productRate,
+                      controller: addProductController.productRateController,
                       onSaved: (value) {
                         addProductController.productRate = value;
                       },

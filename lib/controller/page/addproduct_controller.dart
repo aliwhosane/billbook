@@ -57,6 +57,6 @@ class AddProductController extends GetxController {
     for (var i = 0; i < int.parse(productQuantity); i++) {
       cartController.addToCart(product);
     }
-    // addProductFormKey.currentState?.dispose();
+    Get.back();
   }
 }
