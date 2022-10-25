@@ -1,9 +1,9 @@
+import 'package:billbook/controller/page/home/home_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../controller/cart_controller.dart';
-
 class HomeScreen extends StatelessWidget {
+  final homeController = Get.find<HomeController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,14 +13,56 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Container(
           width: double.infinity,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("This is home screen nigga"),
-              TextButton(
-                  onPressed: () => Get.toNamed('/details'),
-                  child: Text("Go to Add Page")),
-            ],
+          margin: EdgeInsets.all(100),
+          child: Form(
+            key: homeController.createOrderFormKey,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextFormField(
+                  controller: homeController.customerNameController,
+                  onSaved: (value) {
+                    homeController.customerName = value;
+                  },
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      label: Text('Customer Name')),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                TextFormField(
+                  controller: homeController.locationController,
+                  onSaved: (value) {
+                    homeController.location = value;
+                  },
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                      label: Text('Location')),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                TextButton(
+                    onPressed: () => {homeController.createOrder()},
+                    child: Text("Create Order")),
+                SizedBox(
+                  height: 50,
+                ),
+                Expanded(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        ElevatedButton(
+                          onPressed: () => {Get.toNamed('/orderHistory')},
+                          child: Text('Order History'),
+                        )
+                      ]),
+                )
+              ],
+            ),
           ),
         ),
       ),

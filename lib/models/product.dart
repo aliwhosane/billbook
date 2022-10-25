@@ -1,6 +1,7 @@
 class Product {
+  final String id;
   final String name;
-  final String price;
+  final int rate;
 
-  Product({required this.name, required this.price});
+  Product({required this.id, required this.name, required this.rate});
 }

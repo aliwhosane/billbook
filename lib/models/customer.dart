@@ -1,7 +1,7 @@
 class Customer {
   final String name;
   final String id;
-  final String? address;
+  final String? location;
 
-  Customer({required this.name, required this.id, this.address});
+  Customer({required this.name, required this.id, this.location});
 }

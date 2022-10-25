@@ -63,12 +63,15 @@ class AddProductScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        TextButton(
+                        ElevatedButton(
                             onPressed: () {
                               addProductController.addProduct();
                             },
                             child: Text('Add')),
-                        TextButton(
+                        SizedBox(
+                          width: 20,
+                        ),
+                        ElevatedButton(
                             onPressed: () {
                               Get.back();
                             },

@@ -29,6 +29,13 @@
             {
               "client_id": "402837791555-cnagjrar7p3d7i9dd2mlr10ur6ss1kaq.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "402837791555-do5b9jnct588e2rjqai813amk9vhlp71.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.billbook.billbook"
+              }
             }
           ]
         }
